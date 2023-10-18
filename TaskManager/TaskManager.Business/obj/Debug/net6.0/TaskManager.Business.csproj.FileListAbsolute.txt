@@ -1,0 +1,15 @@
+C:\Users\luisf\OneDrive\Documentos\Prueba Tecnica Satrack\TaskManager\TaskManager.Business\bin\Debug\net6.0\TaskManager.Business.deps.json
+C:\Users\luisf\OneDrive\Documentos\Prueba Tecnica Satrack\TaskManager\TaskManager.Business\bin\Debug\net6.0\TaskManager.Business.dll
+C:\Users\luisf\OneDrive\Documentos\Prueba Tecnica Satrack\TaskManager\TaskManager.Business\bin\Debug\net6.0\TaskManager.Business.pdb
+C:\Users\luisf\OneDrive\Documentos\Prueba Tecnica Satrack\TaskManager\TaskManager.Business\bin\Debug\net6.0\TaskManager.Data.dll
+C:\Users\luisf\OneDrive\Documentos\Prueba Tecnica Satrack\TaskManager\TaskManager.Business\bin\Debug\net6.0\TaskManager.Data.pdb
+C:\Users\luisf\OneDrive\Documentos\Prueba Tecnica Satrack\TaskManager\TaskManager.Business\obj\Debug\net6.0\TaskManager.Business.csproj.AssemblyReference.cache
+C:\Users\luisf\OneDrive\Documentos\Prueba Tecnica Satrack\TaskManager\TaskManager.Business\obj\Debug\net6.0\TaskManager.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luisf\OneDrive\Documentos\Prueba Tecnica Satrack\TaskManager\TaskManager.Business\obj\Debug\net6.0\TaskManager.Business.AssemblyInfoInputs.cache
+C:\Users\luisf\OneDrive\Documentos\Prueba Tecnica Satrack\TaskManager\TaskManager.Business\obj\Debug\net6.0\TaskManager.Business.AssemblyInfo.cs
+C:\Users\luisf\OneDrive\Documentos\Prueba Tecnica Satrack\TaskManager\TaskManager.Business\obj\Debug\net6.0\TaskManager.Business.csproj.CoreCompileInputs.cache
+C:\Users\luisf\OneDrive\Documentos\Prueba Tecnica Satrack\TaskManager\TaskManager.Business\obj\Debug\net6.0\TaskManager.Business.csproj.CopyComplete
+C:\Users\luisf\OneDrive\Documentos\Prueba Tecnica Satrack\TaskManager\TaskManager.Business\obj\Debug\net6.0\TaskManager.Business.dll
+C:\Users\luisf\OneDrive\Documentos\Prueba Tecnica Satrack\TaskManager\TaskManager.Business\obj\Debug\net6.0\refint\TaskManager.Business.dll
+C:\Users\luisf\OneDrive\Documentos\Prueba Tecnica Satrack\TaskManager\TaskManager.Business\obj\Debug\net6.0\TaskManager.Business.pdb
+C:\Users\luisf\OneDrive\Documentos\Prueba Tecnica Satrack\TaskManager\TaskManager.Business\obj\Debug\net6.0\ref\TaskManager.Business.dll
