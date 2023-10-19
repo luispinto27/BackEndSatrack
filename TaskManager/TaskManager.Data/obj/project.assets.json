@@ -3223,11 +3223,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luisf\\OneDrive\\Documentos\\Prueba Tecnica Satrack\\TaskManager\\TaskManager.Data\\TaskManager.Data.csproj",
+      "projectUniqueName": "C:\\Users\\luisf\\OneDrive\\Documentos\\Git Prueba Tecnica Satrack\\TaskManager\\TaskManager.Data\\TaskManager.Data.csproj",
       "projectName": "TaskManager.Data",
-      "projectPath": "C:\\Users\\luisf\\OneDrive\\Documentos\\Prueba Tecnica Satrack\\TaskManager\\TaskManager.Data\\TaskManager.Data.csproj",
+      "projectPath": "C:\\Users\\luisf\\OneDrive\\Documentos\\Git Prueba Tecnica Satrack\\TaskManager\\TaskManager.Data\\TaskManager.Data.csproj",
       "packagesPath": "C:\\Users\\luisf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luisf\\OneDrive\\Documentos\\Prueba Tecnica Satrack\\TaskManager\\TaskManager.Data\\obj\\",
+      "outputPath": "C:\\Users\\luisf\\OneDrive\\Documentos\\Git Prueba Tecnica Satrack\\TaskManager\\TaskManager.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -13,6 +13,6 @@ namespace TaskManager.Data.Repositories.Categories
         Category GetCategoryById(int categoryId);
         Category CreateCategory(Category categoryCreated);
         Category UpdateCategory(Category categoryUpdate);
-        Category DeleteCategory(int categoryId);
+        Category DeleteCategory(Category categoryDelete);
     }
 }

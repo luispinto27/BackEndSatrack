@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace TaskManager.Business.Helpers.Response
 {
-    public class CategoryResponse
+    public class TaskResponse
     {
-        public int NumberCategory { get; set; }
-        public string DescriptionCategory { get; set; }
+        public int NumberTask { get; set; }
+        public string DescriptionTask { get; set; }
         public string Message { get; set; }
     }
 }

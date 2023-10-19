@@ -23,38 +23,33 @@ namespace TaskManager.Business.Services.Categories
         public CategoryResponse CreateCategory(CategoryDTO categoryCreated)
         {
 
-            var taskNew = new Category
+            var categoryNew = new Category
             {
                 Description = categoryCreated.Description,
                 Status = true
             };
 
-            var result = _categoryRepository.CreateCategory(taskNew);
+            var result = _categoryRepository.CreateCategory(categoryNew);
 
             if (result == null)
             {
                 return new CategoryResponse
                 {
-                    NumberTask = 0,
-                    DescriptionTask = string.Empty,
-                    Message = "Ocurrio un error durante el almacenamiento de la tarea."
+                    NumberCategory = 0,
+                    DescriptionCategory = string.Empty,
+                    Message = "Ocurrio un error durante el almacenamiento de la categoria."
                 };
             }
             else
             {
                 return new CategoryResponse
                 {
-                    NumberTask = result.CategoryId,
-                    DescriptionTask = result.Description,
-                    Message = "Se ha creado correctamente la tarea"
+                    NumberCategory = result.CategoryId,
+                    DescriptionCategory = result.Description,
+                    Message = "Se ha creado correctamente la categoria"
                 };
             }
             
-        }
-
-        public Category DeleteCategory(int categoryId)
-        {
-            throw new NotImplementedException();
         }
 
         public List<Category> GetAllCategories()
@@ -77,7 +72,8 @@ namespace TaskManager.Business.Services.Categories
             {
                 return new CategoryResponse
                 {
-                    NumberTask = 0,
+                    NumberCategory = 0,
+                    DescriptionCategory = string.Empty, 
                     Message = "Lo sentimos la categoria a modificar no existe"
                 };
             }
@@ -85,8 +81,8 @@ namespace TaskManager.Business.Services.Categories
             {
                 return new CategoryResponse
                 {
-                    NumberTask = category.CategoryId,
-                    DescriptionTask = category.Description,
+                    NumberCategory = category.CategoryId,
+                    DescriptionCategory = category.Description,
                     Message = "La categoria buscada existe dentro de la aplicación"
                 };
             }
@@ -100,8 +96,8 @@ namespace TaskManager.Business.Services.Categories
             {
                 return new CategoryResponse
                 {
-                    NumberTask = 0,
-                    DescriptionTask = string.Empty,
+                    NumberCategory = 0,
+                    DescriptionCategory = string.Empty,
                     Message = "No se encontro la categoria buscada"
                 };
             }
@@ -119,8 +115,8 @@ namespace TaskManager.Business.Services.Categories
             {
                 return new CategoryResponse
                 {
-                    NumberTask = 0,
-                    DescriptionTask = string.Empty,
+                    NumberCategory = 0,
+                    DescriptionCategory = string.Empty,
                     Message = "Ocurrio un error que no se esperaba"
                 };
             }
@@ -128,11 +124,35 @@ namespace TaskManager.Business.Services.Categories
             {
                 return new CategoryResponse
                 {
-                    NumberTask = result.CategoryId,
-                    DescriptionTask = result.Description,
+                    NumberCategory = result.CategoryId,
+                    DescriptionCategory = result.Description,
                     Message = "Categoria modificada correctamente"
                 };
             }
+        }
+
+        public CategoryResponse DeleteCategory(int categoryId)
+        {
+            Category currentCategory = _categoryRepository.GetCategoryById(categoryId);
+
+            if (currentCategory == null) 
+            {
+                return new CategoryResponse
+                {
+                    NumberCategory = 0,
+                    DescriptionCategory = string.Empty,
+                    Message = "La categoria seleccionada no existe"
+                };
+            }
+
+            var result = _categoryRepository.DeleteCategory(currentCategory);
+
+            return new CategoryResponse
+            {
+                NumberCategory = result.CategoryId,
+                DescriptionCategory = result.Description,
+                Message = "Categoria eliminada correctamente."
+            };
         }
     }
 }

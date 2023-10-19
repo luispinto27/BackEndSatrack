@@ -3077,11 +3077,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luisf\\OneDrive\\Documentos\\Prueba Tecnica Satrack\\TaskManager\\TaskManager.Business\\TaskManager.Business.csproj",
+      "projectUniqueName": "C:\\Users\\luisf\\OneDrive\\Documentos\\Git Prueba Tecnica Satrack\\TaskManager\\TaskManager.Business\\TaskManager.Business.csproj",
       "projectName": "TaskManager.Business",
-      "projectPath": "C:\\Users\\luisf\\OneDrive\\Documentos\\Prueba Tecnica Satrack\\TaskManager\\TaskManager.Business\\TaskManager.Business.csproj",
+      "projectPath": "C:\\Users\\luisf\\OneDrive\\Documentos\\Git Prueba Tecnica Satrack\\TaskManager\\TaskManager.Business\\TaskManager.Business.csproj",
       "packagesPath": "C:\\Users\\luisf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luisf\\OneDrive\\Documentos\\Prueba Tecnica Satrack\\TaskManager\\TaskManager.Business\\obj\\",
+      "outputPath": "C:\\Users\\luisf\\OneDrive\\Documentos\\Git Prueba Tecnica Satrack\\TaskManager\\TaskManager.Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3102,8 +3102,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\luisf\\OneDrive\\Documentos\\Prueba Tecnica Satrack\\TaskManager\\TaskManager.Data\\TaskManager.Data.csproj": {
-              "projectPath": "C:\\Users\\luisf\\OneDrive\\Documentos\\Prueba Tecnica Satrack\\TaskManager\\TaskManager.Data\\TaskManager.Data.csproj"
+            "C:\\Users\\luisf\\OneDrive\\Documentos\\Git Prueba Tecnica Satrack\\TaskManager\\TaskManager.Data\\TaskManager.Data.csproj": {
+              "projectPath": "C:\\Users\\luisf\\OneDrive\\Documentos\\Git Prueba Tecnica Satrack\\TaskManager\\TaskManager.Data\\TaskManager.Data.csproj"
             }
           }
         }

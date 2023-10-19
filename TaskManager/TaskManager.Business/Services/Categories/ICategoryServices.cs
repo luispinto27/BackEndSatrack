@@ -15,6 +15,6 @@ namespace TaskManager.Business.Services.Categories
         CategoryResponse GetCategoryById(int categoryId);
         CategoryResponse CreateCategory(CategoryDTO categoryCreated);
         CategoryResponse UpdateCategory(CategoryDTO categoryUpdated);
-        Category DeleteCategory(int categoryId);
+        CategoryResponse DeleteCategory(int categoryId);
     }
 }

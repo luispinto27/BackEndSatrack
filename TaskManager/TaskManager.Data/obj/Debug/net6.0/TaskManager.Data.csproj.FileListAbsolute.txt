@@ -12,3 +12,17 @@ C:\Users\luisf\OneDrive\Documentos\Prueba Tecnica Satrack\TaskManager\TaskManage
 C:\Users\luisf\OneDrive\Documentos\Prueba Tecnica Satrack\TaskManager\TaskManager.Data\obj\Debug\net6.0\TaskManager.Data.pdb
 C:\Users\luisf\OneDrive\Documentos\Prueba Tecnica Satrack\TaskManager\TaskManager.Data\obj\Debug\net6.0\TaskManager.Data.genruntimeconfig.cache
 C:\Users\luisf\OneDrive\Documentos\Prueba Tecnica Satrack\TaskManager\TaskManager.Data\obj\Debug\net6.0\ref\TaskManager.Data.dll
+C:\Users\luisf\OneDrive\Documentos\Git Prueba Tecnica Satrack\TaskManager\TaskManager.Data\bin\Debug\net6.0\TaskManager.Data.deps.json
+C:\Users\luisf\OneDrive\Documentos\Git Prueba Tecnica Satrack\TaskManager\TaskManager.Data\bin\Debug\net6.0\TaskManager.Data.runtimeconfig.json
+C:\Users\luisf\OneDrive\Documentos\Git Prueba Tecnica Satrack\TaskManager\TaskManager.Data\bin\Debug\net6.0\TaskManager.Data.dll
+C:\Users\luisf\OneDrive\Documentos\Git Prueba Tecnica Satrack\TaskManager\TaskManager.Data\bin\Debug\net6.0\TaskManager.Data.pdb
+C:\Users\luisf\OneDrive\Documentos\Git Prueba Tecnica Satrack\TaskManager\TaskManager.Data\obj\Debug\net6.0\TaskManager.Data.csproj.AssemblyReference.cache
+C:\Users\luisf\OneDrive\Documentos\Git Prueba Tecnica Satrack\TaskManager\TaskManager.Data\obj\Debug\net6.0\TaskManager.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luisf\OneDrive\Documentos\Git Prueba Tecnica Satrack\TaskManager\TaskManager.Data\obj\Debug\net6.0\TaskManager.Data.AssemblyInfoInputs.cache
+C:\Users\luisf\OneDrive\Documentos\Git Prueba Tecnica Satrack\TaskManager\TaskManager.Data\obj\Debug\net6.0\TaskManager.Data.AssemblyInfo.cs
+C:\Users\luisf\OneDrive\Documentos\Git Prueba Tecnica Satrack\TaskManager\TaskManager.Data\obj\Debug\net6.0\TaskManager.Data.csproj.CoreCompileInputs.cache
+C:\Users\luisf\OneDrive\Documentos\Git Prueba Tecnica Satrack\TaskManager\TaskManager.Data\obj\Debug\net6.0\TaskManager.Data.dll
+C:\Users\luisf\OneDrive\Documentos\Git Prueba Tecnica Satrack\TaskManager\TaskManager.Data\obj\Debug\net6.0\refint\TaskManager.Data.dll
+C:\Users\luisf\OneDrive\Documentos\Git Prueba Tecnica Satrack\TaskManager\TaskManager.Data\obj\Debug\net6.0\TaskManager.Data.pdb
+C:\Users\luisf\OneDrive\Documentos\Git Prueba Tecnica Satrack\TaskManager\TaskManager.Data\obj\Debug\net6.0\TaskManager.Data.genruntimeconfig.cache
+C:\Users\luisf\OneDrive\Documentos\Git Prueba Tecnica Satrack\TaskManager\TaskManager.Data\obj\Debug\net6.0\ref\TaskManager.Data.dll

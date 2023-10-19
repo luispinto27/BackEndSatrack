@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TaskManager.Data.Context;
+using TaskManager.Data.Models;
 using Task = TaskManager.Data.Models.Task;
 
 
@@ -18,29 +20,86 @@ namespace TaskManager.Data.Repositories.Tasks
             _context = context;
         }
 
-        public Task CreateTask(Task task)
+        public Task CreateTask(Task taskCreated)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _context.Tasks.Add(taskCreated);
+                _context.SaveChanges();
+
+                return taskCreated;
+            }
+            catch (Exception)
+            {
+                return new Task();
+            }
+
         }
 
-        public Task DeleteTask(int taskId)
+        public Task DeleteTask(Task taskDelete)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _context.Remove(taskDelete);
+                _context.SaveChanges();
+
+                return taskDelete;
+            }
+            catch (Exception)
+            {
+                return new Task();
+            }
         }
 
-        public Task EditTask(Task task)
+        public List<Task> GetAllTask()
         {
-            throw new NotImplementedException();
-        }
+            try
+            {
+                return _context.Tasks.ToList();
+            }
+            catch (Exception)
+            {
+                return new List<Task>();
+            }
 
-        public List<Task> GetAllTasks()
-        {
-            throw new NotImplementedException();
         }
 
         public Task GetTaskById(int taskId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _context.Tasks.Where(w => w.TaskId == taskId).FirstOrDefault();
+            }
+            catch (Exception)
+            {
+                return new Task();
+            }
+        }
+
+        public Task UpdateTask(Task taskUpdated)
+        {
+            try
+            {
+                var existingEntry = _context.ChangeTracker.Entries<Task>().FirstOrDefault(e => e.Entity.TaskId == taskUpdated.TaskId);
+
+                if (existingEntry != null)
+                {
+                    existingEntry.CurrentValues.SetValues(taskUpdated);
+                }
+                else
+                {
+                    _context.Tasks.Attach(taskUpdated);
+                    _context.Entry(taskUpdated).State = EntityState.Modified;
+                }
+
+                _context.SaveChanges();
+                return taskUpdated;
+
+            }
+            catch (Exception)
+            {
+                return new Task();
+            }
         }
     }
 }

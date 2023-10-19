@@ -46,5 +46,14 @@ namespace TaskManager.API.Controllers.CategoryController
 
             return Ok(response);
         }
+
+        [HttpDelete("CategoryId")]
+        public IActionResult DeleteCategory(int categoryId)
+        {
+            var response = _categoryService.DeleteCategory(categoryId);
+
+            return Ok(response);
+        }
+
     }
 }

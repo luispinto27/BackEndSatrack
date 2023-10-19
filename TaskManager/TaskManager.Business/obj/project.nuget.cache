@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1dkGL8qkYQ2pz3SWlI6ntMxdYHa7s8DppSkVzEEsQ0mUhmALsS6QDnGrh5UmSxax5ghKuA2i6QdiO7yJDLtv5Q==",
+  "dgSpecHash": "OsnPfoo7vm7zgewqZqFw5AUUgn4EW6mPXigYXnoeVa2WzoMW8gL9YixSSa1AQMK3VCIvN+u8/IYxOgCFIJoaoQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\luisf\\OneDrive\\Documentos\\Prueba Tecnica Satrack\\TaskManager\\TaskManager.Business\\TaskManager.Business.csproj",
+  "projectFilePath": "C:\\Users\\luisf\\OneDrive\\Documentos\\Git Prueba Tecnica Satrack\\TaskManager\\TaskManager.Business\\TaskManager.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luisf\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\luisf\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

@@ -10,10 +10,10 @@ namespace TaskManager.Data.Repositories.Tasks
 {
     public interface ITaskRepository
     {
-        List<Task> GetAllTasks();
-        Task GetTaskById(int taskId);
-        Task CreateTask(Task task);
-        Task EditTask(Task task);
-        Task DeleteTask(int taskId);
+        List<Task> GetAllTask();
+        Task GetTaskById(int categoryId);
+        Task CreateTask(Task categoryCreated);
+        Task UpdateTask(Task categoryUpdate);
+        Task DeleteTask(Task categoryDelete);
     }
 }

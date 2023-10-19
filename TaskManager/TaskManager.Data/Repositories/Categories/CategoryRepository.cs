@@ -34,9 +34,19 @@ namespace TaskManager.Data.Repositories.Categories
 
         }
 
-        public Category DeleteCategory(int categoryId)
+        public Category DeleteCategory(Category categoryDelete)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _context.Remove(categoryDelete);
+                _context.SaveChanges();
+
+                return categoryDelete;
+            }
+            catch (Exception)
+            {
+                return new Category();
+            }
         }
 
         public List<Category> GetAllCategories()
