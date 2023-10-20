@@ -17,13 +17,13 @@ namespace TaskManager.API.Controllers.CategoryController
             _categoryService = categoryService;
         }
 
-        [HttpGet]
+        [HttpGet("Get")]
         public List<Category> GetAllCategories()
         {
             return _categoryService.GetAllCategories();
         }
 
-        [HttpGet("CategoryId")]
+        [HttpGet("GetById/CategoryId")]
         public IActionResult GetCategoryById(int categoryId) 
         {
             var response = _categoryService.GetCategoryById(categoryId);
@@ -31,7 +31,7 @@ namespace TaskManager.API.Controllers.CategoryController
             return Ok(response);
         }
 
-        [HttpPost]
+        [HttpPost("Create/")]
         public IActionResult CreateCategory(CategoryDTO categoryCreated)
         {
             var response = _categoryService.CreateCategory(categoryCreated);
@@ -39,7 +39,7 @@ namespace TaskManager.API.Controllers.CategoryController
             return Ok(response);
         }
 
-        [HttpPut]
+        [HttpPut("Update/")]
         public IActionResult UpdateCategory(CategoryDTO categoryUpdated)
         {
             var response = _categoryService.UpdateCategory(categoryUpdated);
@@ -47,7 +47,7 @@ namespace TaskManager.API.Controllers.CategoryController
             return Ok(response);
         }
 
-        [HttpDelete("CategoryId")]
+        [HttpDelete("Delete/{CategoryId}")]
         public IActionResult DeleteCategory(int categoryId)
         {
             var response = _categoryService.DeleteCategory(categoryId);

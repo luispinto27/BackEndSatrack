@@ -55,7 +55,9 @@ namespace TaskManager.Data.Repositories.Tasks
         {
             try
             {
-                return _context.Tasks.ToList();
+                return _context.Tasks
+                        .Include(ca => ca.Category)
+                        .ToList();
             }
             catch (Exception)
             {
@@ -68,7 +70,9 @@ namespace TaskManager.Data.Repositories.Tasks
         {
             try
             {
-                return _context.Tasks.Where(w => w.TaskId == taskId).FirstOrDefault();
+                return _context.Tasks
+                    .Include(ca => ca.Category)
+                    .Where(w => w.TaskId == taskId).FirstOrDefault();
             }
             catch (Exception)
             {
@@ -95,6 +99,26 @@ namespace TaskManager.Data.Repositories.Tasks
                 _context.SaveChanges();
                 return taskUpdated;
 
+            }
+            catch (Exception)
+            {
+                return new Task();
+            }
+        }
+
+        public Task AsignedCategory(Task taskAsigned)
+        {
+            try
+            {
+                var taskCurrent = _context.Tasks.FirstOrDefault(o => o.TaskId == taskAsigned.TaskId);
+
+                if (taskCurrent != null)
+                {
+                    taskCurrent.Category = taskAsigned.Category;
+                    _context.SaveChanges();
+                }
+
+                return taskAsigned;
             }
             catch (Exception)
             {

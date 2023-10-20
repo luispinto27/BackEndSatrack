@@ -26,6 +26,17 @@ namespace TaskManager.API
 
             services.AddControllers();
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowOrigin", builder =>
+                {
+                    builder
+                        .WithOrigins("http://localhost:4200")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
+
             services.AddScoped<ITaskServices, TaskServices>();
             services.AddScoped<ITaskRepository, TaskRepository>();
             services.AddScoped<ICategoryServices, CategoryServices>();
@@ -42,6 +53,8 @@ namespace TaskManager.API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            app.UseCors("AllowOrigin");
 
             app.UseHttpsRedirection();
             app.UseRouting();

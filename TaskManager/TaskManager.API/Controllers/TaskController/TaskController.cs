@@ -12,18 +12,18 @@ namespace TaskManager.API.Controllers.TaskController
     {
         private readonly ITaskServices _taskServices;
 
-        private TaskController(ITaskServices taskServices)
+        public TaskController(ITaskServices taskServices)
         {
             _taskServices = taskServices;
         }
 
-        [HttpGet]
+        [HttpGet("Get/")]
         public List<Task> GetAllTask()
         {
             return _taskServices.GetAllTasks();
         }
 
-        [HttpGet("CategoryId")]
+        [HttpGet("Get/{TaskId}")]
         public IActionResult GetTaskById(int taskId)
         {
             var response = _taskServices.GetTaskById(taskId);
@@ -31,7 +31,7 @@ namespace TaskManager.API.Controllers.TaskController
             return Ok(response);
         }
 
-        [HttpPost]
+        [HttpPost("Create/")]
         public IActionResult CreateTask(TaskDTO taskCreated)
         {
             var response = _taskServices.CreateTask(taskCreated);
@@ -39,7 +39,7 @@ namespace TaskManager.API.Controllers.TaskController
             return Ok(response);
         }
 
-        [HttpPut]
+        [HttpPut("Update/")]
         public IActionResult UpdateTask(TaskDTO taskUpdate)
         {
             var response = _taskServices.UpdateTask(taskUpdate);
@@ -47,13 +47,38 @@ namespace TaskManager.API.Controllers.TaskController
             return Ok(response);
         }
 
-        [HttpDelete("TaskId")]
-        public IActionResult DeleteTask(int categoryId)
+        [HttpDelete("Delete/{TaskId}")]
+        public IActionResult DeleteTask(int taskId)
         {
-            var response = _taskServices.DeleteTask(categoryId);
+            var response = _taskServices.DeleteTask(taskId);
 
             return Ok(response);
         }
 
+        [HttpGet("Completed/{TaskId}")]
+        public IActionResult CompletedTask(int taskId)
+        {
+            var response = _taskServices.CompletedTask(taskId);
+
+            return Ok(response);
+        }
+
+        [HttpGet("Asigned/{TaskId}/{CategoryId}")]
+        public IActionResult AsignedCategory(int taskId, int categoryId)
+        {
+            var response = _taskServices.AsignedCategory(taskId, categoryId);
+
+            return Ok(response);
+        }
+
+        [HttpPost("AsignedDateLimited/")]
+        public IActionResult AsignedDateLimited(Task taskDateLimited)
+        {
+            var response = _taskServices.AsignedDateLimited(taskDateLimited);
+
+            return Ok(response);
+
+
+        }
     }
 }

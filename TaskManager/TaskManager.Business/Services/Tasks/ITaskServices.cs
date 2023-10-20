@@ -17,5 +17,8 @@ namespace TaskManager.Business.Services.Tasks
         TaskResponse CreateTask(TaskDTO taskCreated);
         TaskResponse UpdateTask(TaskDTO taskUpdated);
         TaskResponse DeleteTask(int taskId);
+        TaskResponse CompletedTask(int taskId);
+        TaskResponse AsignedCategory(int taskId, int categoryId);
+        TaskResponse AsignedDateLimited(Task taskAsignedDateLimited);
     }
 }

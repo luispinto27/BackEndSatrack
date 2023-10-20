@@ -14,6 +14,6 @@ namespace TaskManager.Business.Helpers.DTO
         public DateTime? DateCreated { get; set; }
         public DateTime? DateLimited { get; set; }
         public bool isCompleted { get; set; }
-        public Category CategoryId { get; set; }
+        public int CategoryId { get; set; }
     }
 }
